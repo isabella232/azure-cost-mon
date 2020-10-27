@@ -4,49 +4,48 @@
 #
 #    pip-compile --output-file requirements_dev.txt requirements_dev.in
 #
-
-adal==0.5.1
-asn1crypto==0.24.0
-azure-common==1.1.8
-azure-mgmt-compute==3.0.1
-azure-mgmt-nspkg==2.0.0
-azure-mgmt-reservations==0.1.0
-azure-nspkg==2.0.0
-certifi==2018.1.18
-cffi==1.11.5
-click==6.7
-configparser==3.5.0
+-e file:///home/dependabot/dependabot-updater/tmp/dependabot_20201027-72-1mtejxg  # via -r requirements.txt
+adal==0.5.1               # via -r requirements.txt, msrestazure
+azure-common==1.1.8       # via -r requirements.txt, azure-mgmt-compute, azure-mgmt-reservations
+azure-mgmt-compute==3.0.1  # via -r requirements.txt, sanitized-package
+azure-mgmt-nspkg==2.0.0   # via -r requirements.txt, azure-mgmt-compute, azure-mgmt-reservations
+azure-mgmt-reservations==0.1.0  # via -r requirements.txt, sanitized-package
+azure-nspkg==2.0.0        # via -r requirements.txt, azure-common, azure-mgmt-nspkg
+certifi==2018.1.18        # via -r requirements.txt, msrest
+cffi==1.11.5              # via -r requirements.txt, cryptography
+click==6.7                # via -r requirements.txt, flask
+configparser==3.5.0       # via -r requirements.txt, entrypoints
 cookies==2.2.1            # via responses
 coverage==4.3.4           # via pytest-cov
-cryptography==2.2.2
-entrypoints==0.2.3
-enum34==1.1.6
-flask==0.12.2
+cryptography==3.2         # via -r requirements.txt, adal, secretstorage
+entrypoints==0.2.3        # via -r requirements.txt, keyring
+enum34==1.1.6             # via -r requirements.txt, cryptography, msrest
+flask==0.12.2             # via -r requirements.txt, sanitized-package
 funcsigs==1.0.2           # via mock
-idna==2.6
-ipaddress==1.0.19
-isodate==0.6.0
-itsdangerous==0.24
-jinja2==2.9.6
-keyring==12.0.0
-markupsafe==1.0
+ipaddress==1.0.19         # via -r requirements.txt, cryptography
+isodate==0.6.0            # via -r requirements.txt, msrest
+itsdangerous==0.24        # via -r requirements.txt, flask
+jinja2==2.9.6             # via -r requirements.txt, flask
+keyring==12.0.0           # via -r requirements.txt, msrestazure
+markupsafe==1.0           # via -r requirements.txt, jinja2
 mock==2.0.0               # via responses
-msrest==0.4.27
-msrestazure==0.4.25
-numpy==1.12.1
-oauthlib==2.0.7
-pandas==0.20.1
+msrest==0.4.27            # via -r requirements.txt, msrestazure
+msrestazure==0.4.25       # via -r requirements.txt, azure-mgmt-compute, azure-mgmt-reservations
+numpy==1.12.1             # via -r requirements.txt, pandas, sanitized-package
+oauthlib==2.0.7           # via -r requirements.txt, requests-oauthlib
+pandas==0.20.1            # via -r requirements.txt, sanitized-package
 pbr==1.10.0               # via mock
-prometheus-client==0.0.19
+prometheus-client==0.0.19  # via -r requirements.txt, sanitized-package
 py==1.4.32                # via pytest
-pycparser==2.18
-pyjwt==1.6.1
-pytest-cov==2.4.0
-pytest==3.0.6
-python-dateutil==2.6.0
-pytz==2017.2
-requests-oauthlib==0.8.0
-requests==2.14.2
-responses==0.5.1
-six==1.10.0
-werkzeug==0.12.2
+pycparser==2.18           # via -r requirements.txt, cffi
+pyjwt==1.6.1              # via -r requirements.txt, adal
+pytest-cov==2.4.0         # via -r requirements_dev.in
+pytest==3.0.6             # via -r requirements_dev.in, pytest-cov
+python-dateutil==2.6.0    # via -r requirements.txt, adal, pandas
+pytz==2017.2              # via -r requirements.txt, pandas
+requests-oauthlib==0.8.0  # via -r requirements.txt, msrest
+requests==2.14.2          # via -r requirements.txt, adal, msrest, requests-oauthlib, responses, sanitized-package
+responses==0.5.1          # via -r requirements_dev.in
+secretstorage==2.3.1      # via -r requirements.txt, keyring
+six==1.10.0               # via -r requirements.txt, cryptography, isodate, mock, python-dateutil, responses
+werkzeug==0.12.2          # via -r requirements.txt, flask
